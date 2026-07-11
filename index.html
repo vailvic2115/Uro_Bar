@@ -5,15 +5,93 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Win a Free Drink!</title>
 <style>
-body{margin:0;background:#121212;color:#fff;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh}
-.card{background:#1f1f1f;padding:28px;border-radius:18px;max-width:420px;width:90%;box-shadow:0 0 25px rgba(255,215,0,.2);text-align:center}
-h1{color:#FFD700;margin-top:0}
-.question{font-size:1.4em;font-weight:bold;margin:20px 0}
-button{display:block;width:100%;margin:10px 0;padding:15px;border:none;border-radius:10px;background:#333;color:#fff;font-size:1em;cursor:pointer}
-button:hover{background:#FFD700;color:#000}
-.timer{font-size:48px;color:#FFD700;margin:15px 0}
-.correct{color:#7CFC98;font-size:1.8em}
-.wrong{color:#ff6b6b;font-size:1.6em}
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:linear-gradient(180deg,#7bb3d9,#4e6ea8);
+    color:#fffae5;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.card{
+    background:#4e6ea8;
+    padding:28px;
+    border-radius:20px;
+    max-width:420px;
+    width:90%;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+h1{
+    color:#ffeda4;
+    margin-top:0;
+    font-size:2rem;
+}
+
+p{
+    line-height:1.5;
+}
+
+.question{
+    font-size:1.4rem;
+    font-weight:bold;
+    margin:24px 0;
+    color:#ffffff;
+}
+
+button{
+    display:block;
+    width:100%;
+    margin:12px 0;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#7bb3d9;
+    color:#1d3557;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    background:#ffeda4;
+    transform:scale(1.02);
+}
+
+.timer{
+    font-size:56px;
+    color:#ffeda4;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.correct{
+    color:#ffeda4;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.wrong{
+    color:#fffae5;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+small{
+    color:#fffae5;
+    opacity:.8;
+}
 </style>
 </head>
 <body>
